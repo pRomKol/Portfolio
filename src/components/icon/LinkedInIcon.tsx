@@ -1,10 +1,9 @@
 import React from 'react';
-import {Icon} from "./Icon";
+import {Icon, IconsPropsType} from "./Icon";
 
-export const LinkedInIcon = () => {
+export const LinkedInIcon = (props:IconsPropsType) => {
     return (
-        <Icon iconId={'linkedInIcon'} width={'32'}
-        height={'32'} viewBox={'0 0 32 32'}/>
+        <Icon iconId={props.xIconId} width={props.xWidth} height={props.xHeight} viewBox={props.xViewBox} />
     );
 };
 
