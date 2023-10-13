@@ -4,9 +4,9 @@ import {Title} from "../../components/titles/Title";
 import {ShortBiography} from "./shortbiography/ShortBiography";
 import {Button} from "../../components/button/Button";
 import photo from "../../sources/Rectangle 6.jpg"
-import {Wrapper, WrapperPropsType} from "../../components/FlexWrapper";
+import {Wrapper, FlexWrapperPropsType} from "../../components/wrappers/FlexWrapper";
 
-export const Main = (props: WrapperPropsType) => {
+export const Main = (props: FlexWrapperPropsType) => {
     return (
         <StyledMain>
             <Wrapper direction={'column'} justify={'space-around'}>
@@ -27,13 +27,7 @@ const StyledMain = styled.main`
   background-color: #0F1624;
   display: flex;
   min-height: 100vh;`
-const ContentWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-const PhotoWrapper = styled.div`
-`
+
 const Photo = styled.img`
   width: 380px;
   height: 450px;

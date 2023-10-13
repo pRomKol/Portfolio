@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {StyledTitlesPropsType} from "../../../components/titles/SectionTitle";
+import {StyledProjectsPropsType} from "../../../components/titles/SectionTitle";
 
-export const ProjectTitle = (props:StyledTitlesPropsType) => {
+export const ItemTitle = (props:StyledProjectsPropsType) => {
     return (
         <StyledProjectTitle>
             {props.value}
         </StyledProjectTitle>
     );
 };
- const StyledProjectTitle = styled.div`
+ const StyledProjectTitle = styled.h3`
+ color: white;
  `

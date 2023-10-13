@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 type DiscriptionPropsType = {
-    discription: string
+    value?: string
+    projectValue?: string
 }
 export const ProjectDiscription = (props: DiscriptionPropsType) => {
     return (
         <StyledProjectDiscription>
-            {props.discription}
+            {props.projectValue}
         </StyledProjectDiscription>
     );
 };
