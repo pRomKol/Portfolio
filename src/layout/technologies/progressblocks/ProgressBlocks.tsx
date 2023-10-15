@@ -22,7 +22,7 @@ const progressBlockArray = [
         title: 'React'
     },
     {
-        progress: '77%',
+        progress: '69%',
         title: 'Styled components'
 
     }]

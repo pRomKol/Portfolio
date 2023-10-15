@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
-type DiscriptionPropsType = {
+type DescriptionPropsType = {
     value?: string
     projectValue?: string
 }
-export const ProjectDiscription = (props: DiscriptionPropsType) => {
+export const ProjectDescription = (props: DescriptionPropsType) => {
     return (
-        <StyledProjectDiscription>
+        <StyledProjectDescription>
             {props.projectValue}
-        </StyledProjectDiscription>
+        </StyledProjectDescription>
     );
 };
-const StyledProjectDiscription = styled.div``
+const StyledProjectDescription = styled.div``
 

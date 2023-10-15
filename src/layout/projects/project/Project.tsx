@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Wrapper} from "../../../components/wrappers/FlexWrapper";
 import {Button} from "../../../components/button/Button";
 import {ItemTitle} from "./ProjectTitle";
-import {ProjectDiscription} from "./ProjectDiscription";
+import {ProjectDescription} from "./ProjectDiscription";
 
 
 type ProjectsProps = {
@@ -20,7 +20,7 @@ export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
             <ProjectWrapper>
                 <Image src={imgSrc}/>
                 <ItemTitle value={title}/>
-                <ProjectDiscription projectValue={description}/>
+                <ProjectDescription projectValue={description}/>
                 <Button/>
             </ProjectWrapper>
         </Wrapper>
