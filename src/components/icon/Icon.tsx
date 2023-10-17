@@ -3,12 +3,12 @@ import icons from '../../sources/Sprite.svg'
 
 export type IconsPropsType = {
     iconId?: string;
-
-    width?: string;
-
-    height?: string;
-
-    viewBox?: string;
+    width?: string
+    widthValue?: string;
+    height?:string
+    heightValue?: string;
+    viewBox?: string
+    viewBoxValue?: string;
 
     fill?: string
 }

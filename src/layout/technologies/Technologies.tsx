@@ -1,4 +1,4 @@
-import React from 'react';
+import yaReact from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../components/titles/SectionTitle";
 import {ProgressBlocks} from "./progressblocks/ProgressBlocks";

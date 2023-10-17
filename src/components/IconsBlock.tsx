@@ -1,7 +1,7 @@
-import React from 'react';
-import {GitHubIcon} from "./icon/GitHubIcon";
-import {LinkedInIcon} from "./icon/LinkedInIcon";
-import {TelegramIcon} from "./icon/TelegramIcon";
+import {Icon} from "./icon/Icon";
+import {SocialLinkBlock, StyledIconLink} from "../layout/footer/footericonsblock/FooterIconsBlock";
+import styled from "styled-components";
+
 
 
 
@@ -9,11 +9,12 @@ import {TelegramIcon} from "./icon/TelegramIcon";
 
 export const IconsBlock = () => {
     return (
-        <div>
-            <GitHubIcon/>
-            <LinkedInIcon/>
-            <TelegramIcon/>
-        </div>
+        <SocialLinkBlock>
+            <HeaderStyledIconLink><a href="https://github.com/pRomKol" target={'_blank'}><Icon iconId={'HeaderGitHub'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/></a></HeaderStyledIconLink>
+            <HeaderStyledIconLink><a href=""><Icon iconId={'HeaderLinkedIn'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/></a></HeaderStyledIconLink>
+            <HeaderStyledIconLink><a href=""><Icon iconId={'HeaderTelegram'} viewBox={'0 0 35 30'} width={'35'} height={'30'}/></a></HeaderStyledIconLink>
+        </SocialLinkBlock>
     );
 };
-
+const HeaderStyledIconLink = styled(StyledIconLink)`
+margin-left: 25px`
