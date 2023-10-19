@@ -4,29 +4,33 @@ import {Title} from "../../components/titles/Title";
 import {ShortBiography} from "./shortbiography/ShortBiography";
 import {Button} from "../../components/button/Button";
 import photo from "../../sources/Rectangle 6.jpg"
-import {Wrapper, FlexWrapperPropsType} from "../../components/wrappers/FlexWrapper";
+import {Wrapper} from "../../components/wrappers/FlexWrapper";
+import {Container} from "../../components/Container";
+import {theme} from "../../components/globalstyle/Theme";
 
-export const Main = (props: FlexWrapperPropsType) => {
+export const Main = () => {
     return (
         <StyledMain>
-            <Wrapper direction={'column'} justify={'space-around'}>
-                <Title/>
-                <ShortBiography/>
-                <Button/>
-            </Wrapper>
-
-            <Wrapper>
-                <Photo src={photo}/>
-            </Wrapper>
+            <Container>
+                <Wrapper justify={'space-around'} align={'center'}>
+                    <div>
+                        <Title/>
+                        <ShortBiography/>
+                        <Button/>
+                    </div>
+                    <Photo src={photo}/>
+                </Wrapper>
+            </Container>
         </StyledMain>
     );
 };
 
 
-const StyledMain = styled.main`
-  background-color: #0F1624;
-  display: flex;
-  min-height: 100vh;`
+const StyledMain = styled.section`
+  color: ${theme.colors.font}; 
+  min-height: 100vh;
+
+`
 
 const Photo = styled.img`
   width: 380px;

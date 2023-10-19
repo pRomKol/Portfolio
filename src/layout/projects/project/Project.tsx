@@ -16,25 +16,26 @@ type ProjectsProps = {
 export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
     return (
 
-        <Wrapper direction={'column'} align={'center'} border={'1px solid #A39D9D;'} radius={'50px 0px'}>
+        <StyledItem direction={'column'} align={'center'} border={'1px solid #A39D9D;'} radius={'50px 0px'}>
             <ProjectWrapper>
                 <Image src={imgSrc}/>
                 <ItemTitle value={title}/>
                 <ProjectDescription projectValue={description}/>
                 <Button/>
             </ProjectWrapper>
-        </Wrapper>
+        </StyledItem>
 
     );
 };
 
 
-const StyledItem = styled.div``
+const StyledItem = styled(Wrapper)``
 const Image = styled.img`
   width: 500px;
   height: 280px;
   border-radius: 24px 8px 8px 8px;
   object-fit: fill;
+  margin: 25px;
 `
 const ProjectWrapper = styled.div`
   width: 550px;

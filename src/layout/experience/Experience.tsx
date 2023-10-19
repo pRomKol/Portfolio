@@ -6,17 +6,19 @@ import {Wrapper} from "../../components/wrappers/FlexWrapper";
 
 export const Experience = () => {
     return (
-        <StyledExperience direction={'column'} >
-            <SectionTitle value={'Experience'}/>
-            <ExperienceBlocks/>
+        <StyledExperience>
+            <Wrapper direction={'column'} >
+                <SectionTitle value={'Experience'}/>
+                <ExperienceBlocks/>
+            </Wrapper>
         </StyledExperience>
     );
 };
-const StyledExperience = styled(Wrapper)`
-  background-color: #161D2A;
+const StyledExperience = styled.section`
   min-height: 50vh;
-  
 `
+
+
 
 
 

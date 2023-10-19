@@ -23,7 +23,7 @@ export const Projects = () => {
     );
 };
 const StyledProjects = styled.section`
-  background-color: #161D2A;
+ 
   min-height: 100vh;
 `
 

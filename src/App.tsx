@@ -6,13 +6,12 @@ import {Projects} from "./layout/projects/Projects";
 import {Technologies} from "./layout/technologies/Technologies";
 import {Experience} from "./layout/experience/Experience";
 import {Footer} from "./layout/footer/Footer";
-import {GlobalStyle} from "./components/globalstyle/global.GlobalStyles";
+
 
 
 function App() {
     return (
         <div className="App">
-
             <Header/>
             <Main/>
             <Projects/>

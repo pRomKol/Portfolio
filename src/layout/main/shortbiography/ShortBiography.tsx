@@ -1,10 +1,12 @@
 import React from 'react';
+import styled from "styled-components";
 
 export const ShortBiography = () => {
     return (
-        <div>
-            <h2>my short biography</h2>
-        </div>
+        <StyledShortBiography>
+            Lorem ipsum dolor amet
+        </StyledShortBiography>
+
     );
 };
-
+const StyledShortBiography = styled.h2``

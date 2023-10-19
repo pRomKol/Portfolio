@@ -15,6 +15,6 @@ export const Technologies = () => {
     );
 };
 const StyledTechnologies = styled.section`
-  background-color: #0F1624;
+ 
   min-height: 100vh;
 `
