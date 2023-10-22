@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
-    
+    color: ${theme.colors.font};
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,5 +31,8 @@ export const GlobalStyle = createGlobalStyle`
 
   section:nth-of-type(odd) {
     background-color: ${theme.colors.primaryBg};
+  }
+  section{
+    padding: 100px 0 140px 0;
   }
 `

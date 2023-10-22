@@ -30,7 +30,7 @@ export const HeaderMenu = (props: { menuItem: Array<string> }) => {
 const StyledHeaderNav = styled.nav`
   ul {
     display: flex;
-    gap: 30px;
+    gap: 80px;
     justify-content: center;
   }`
 const MenuItems = styled.ul``

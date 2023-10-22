@@ -10,5 +10,12 @@ export const ItemTitle = (props:StyledProjectsPropsType) => {
     );
 };
  const StyledProjectTitle = styled.h3`
- color: white;
+   color: #FFF;
+   
+   margin: 40px auto 67px auto;
+   font-size: 30px;
+   //margin: 40px 25px 67px 0;
+   font-weight: 600;
+   line-height: 88.5%; 
+
  `

@@ -1,11 +1,12 @@
 
 import {ProgressBlock} from "./progressblock/ProgressBlock";
+import styled from "styled-components";
 
 export const ProgressBlocks = () => {
     return (
-        <div>
+        <StyledProgressBlock>
             {progressBlockArray.map((block) => ( <ProgressBlock progress={block.progress} title={block.title}/>))}
-        </div>
+        </StyledProgressBlock>
     );
 };
 const progressBlockArray = [
@@ -26,3 +27,5 @@ const progressBlockArray = [
         title: 'Styled components'
 
     }]
+const StyledProgressBlock = styled.div`
+`

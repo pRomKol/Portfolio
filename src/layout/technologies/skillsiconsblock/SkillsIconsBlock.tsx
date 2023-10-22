@@ -11,7 +11,6 @@ export const SkillsIconsBlock = () => {
             <GitSkillsIcon/>
             <GitHubSkillIcon/>
             <FigmaSkillsIcon/>
-
         </StyledSkillIconsBlock>
     );
 };

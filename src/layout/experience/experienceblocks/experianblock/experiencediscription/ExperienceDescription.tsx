@@ -12,5 +12,10 @@ export const ExperienceDescription: FC<ExperienceDescriptionPropsType> = ({value
 };
 
 const StyledExperienceDescription = styled.div`
-max-width: 260px
+max-width: 260px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  margin-top: 20px;
 `

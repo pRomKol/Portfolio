@@ -11,5 +11,12 @@ export const ProjectDescription = (props: DescriptionPropsType) => {
         </StyledProjectDescription>
     );
 };
-const StyledProjectDescription = styled.div``
+const StyledProjectDescription = styled.span`
+    
+
+ 
+  font-size: 18px;
+  margin: 0 25px 50px 0;
+  font-weight: 500;
+`
 

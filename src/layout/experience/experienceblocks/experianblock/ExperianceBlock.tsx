@@ -17,6 +17,9 @@ export const ExperienceBlock: FC<ExperienceBlockPropsType > = ({year, descriptio
     );
 };
 const StyledExperienceBlock = styled.div`
-position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 `
 

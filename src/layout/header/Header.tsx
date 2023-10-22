@@ -12,7 +12,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <Wrapper justify={'space-between'} align={'center'}>
+                <Wrapper justify={'space-between'} alignCustom={'center'}>
                     <Logo/>
                     <HeaderMenu menuItem={items}/>
                     <IconsBlock/>
@@ -25,10 +25,10 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #0F1624;
   padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 999;
 `
 

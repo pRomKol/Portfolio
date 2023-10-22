@@ -7,16 +7,17 @@ import {Wrapper} from "../../../components/wrappers/FlexWrapper";
 
 export const ExperienceBlocks = () => {
     return (
-        <StyledExperienceBlocks align={'center'} justify={'space-between'}>
+        <StyledExperienceBlocks alignCustom={'center'} justify={'space-between'}>
             {experienceArray.map((exp) => (<ExperienceBlock year={exp.year} description={exp.description}/>))}
         </StyledExperienceBlocks>
     );
 }
 const StyledExperienceBlocks = styled(Wrapper)`
+  height: auto;
   --items-count: 4;
   gap: var(--gap);
   --gap: 32px;
-  margin: 0px 149px;
+  
   --block-max-width: 260px;
   flex-direction: row;
   position: relative;

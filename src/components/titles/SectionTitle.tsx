@@ -16,6 +16,7 @@ export const SectionTitle = (props:StyledProjectsPropsType) => {
     );
 };
 const StyledSectionTitle = styled.h2`
-color: aqua;
-margin: 0;
+  padding-bottom: 70px;
+  font-size: 46px;
+  font-weight: 600;
 `
