@@ -6,7 +6,8 @@ import {Button} from "../../components/button/Button";
 import photo from "../../sources/clipdrop.webp"
 import {Wrapper} from "../../components/wrappers/FlexWrapper";
 import {Container} from "../../components/Container";
-import {theme} from "../../components/globalstyle/Theme";
+import {Icon} from "../../components/icon/Icon";
+
 
 export const Main = () => {
     return (
@@ -18,9 +19,13 @@ export const Main = () => {
                         <ShortBiography/>
                         <Button/>
                     </StyledContent>
-                   <StyledPhoto>
+
                        <Photo src={photo}/>
-                   </StyledPhoto>
+                        {/*<div style={{ position: 'absolute', width: 666, height: 666, background: 'red', right: 0, top: 0}}>*/}
+                        {/*</div>*/}
+                        <StyledBackgroundImg>
+                            <Icon iconId={'backgroundImg'} width={"668"} height={"668"} viewBox={"0 0 668 668"}/>
+                        </StyledBackgroundImg>
                 </Wrapper>
 
             </Container>
@@ -46,8 +51,12 @@ const Photo = styled.img`
   object-fit: cover;
   border-radius: 50px 0px;
   border: 5px solid #8643DC;
+  z-index: 1;
 `
-const StyledPhoto = styled.div`
-position: relative;
- &::before {
- }`
+const StyledBackgroundImg = styled.div`
+position: absolute;
+right: 0;
+  top: 0;
+`
+
+

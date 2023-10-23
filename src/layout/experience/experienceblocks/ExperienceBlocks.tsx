@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {ExperienceBlock} from "./experianblock/ExperianceBlock";
 import {Wrapper} from "../../../components/wrappers/FlexWrapper";
+import {theme} from "../../../components/globalstyle/Theme";
 
 
 
@@ -24,7 +25,7 @@ const StyledExperienceBlocks = styled(Wrapper)`
 
   &::before {
     content: '';
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background: ${theme.colors.accent};
     position: absolute;
     width: calc(100% - var(--offset) * 2);
     height: 10px;
