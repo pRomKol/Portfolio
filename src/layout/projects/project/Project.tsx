@@ -21,7 +21,9 @@ export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
                 <Image src={imgSrc}/>
                 <ItemTitle value={title}/>
                 <ProjectDescription projectValue={description}/>
-                <Button/>
+                <Button outlined>
+                    Look it Up
+                </Button>
             </ProjectWrapper>
         </StyledItem>
 

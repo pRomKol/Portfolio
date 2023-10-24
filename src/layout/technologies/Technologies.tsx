@@ -5,6 +5,7 @@ import {ProgressBlocks} from "./progressblocks/ProgressBlocks";
 import {SkillsIconsBlock} from "./skillsiconsblock/SkillsIconsBlock";
 import {Container} from "../../components/Container";
 import {Wrapper} from "../../components/wrappers/FlexWrapper";
+import {Addition} from "./Addition";
 
 export const Technologies = () => {
     return (
@@ -13,7 +14,7 @@ export const Technologies = () => {
                 <SectionTitle value={'Technologies'}/>
                 <Wrapper  direction={'column'} alignCustom={'center'}>
                     <ProgressBlocks/>
-                    <SectionTitle value={'Additional technologies and skills'}/>
+                    <Addition/>
                     <SkillsIconsBlock/>
                 </Wrapper>
             </Container>

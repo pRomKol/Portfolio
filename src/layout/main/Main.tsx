@@ -17,15 +17,15 @@ export const Main = () => {
                     <StyledContent>
                         <Title/>
                         <ShortBiography/>
-                        <Button/>
+                        <Button primary>
+                            Let`s begin
+                        </Button>
                     </StyledContent>
 
-                       <Photo src={photo}/>
-                        {/*<div style={{ position: 'absolute', width: 666, height: 666, background: 'red', right: 0, top: 0}}>*/}
-                        {/*</div>*/}
-                        <StyledBackgroundImg>
-                            <Icon iconId={'backgroundImg'} width={"668"} height={"668"} viewBox={"0 0 668 668"}/>
-                        </StyledBackgroundImg>
+                    <Photo src={photo}/>
+                    <StyledBackgroundImg>
+                        <Icon iconId={'backgroundImg'} width={"668"} height={"668"} viewBox={"0 0 668 668"}/>
+                    </StyledBackgroundImg>
                 </Wrapper>
 
             </Container>
@@ -34,15 +34,15 @@ export const Main = () => {
 };
 
 const StyledContent = styled.div`
-    justify-content: start;
-   
+  justify-content: start;
+
 `
 const StyledMain = styled.section`
   min-height: 100vh;
   padding: 125px 0;
   display: flex;
   align-items: center;
-  
+
 `
 
 const Photo = styled.img`
@@ -54,8 +54,8 @@ const Photo = styled.img`
   z-index: 1;
 `
 const StyledBackgroundImg = styled.div`
-position: absolute;
-right: 0;
+  position: absolute;
+  right: 0;
   top: 0;
 `
 

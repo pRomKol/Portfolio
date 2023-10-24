@@ -1,21 +1,30 @@
 import React, {FC} from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import {theme} from "../globalstyle/Theme";
 type ButtonPropsType= {
+
+    primary?: boolean
+    outlined?: boolean
 }
-export const Button:FC<ButtonPropsType> = () => {
-    return (
-        <StyledButton>
-            Let`s Begin
-        </StyledButton>
-    );
-};
-const StyledButton = styled.button`
-  width: 240px;
+
+
+export const Button = styled.button<ButtonPropsType>`
+  ${props => props.primary &&  css<ButtonPropsType>`
+    width: 240px;
   height: 60px;
   border-radius: 83px;
-  background:  linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  background: ${theme.colors.accent};
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-`
+  `} 
+  ${props => props.outlined && css<ButtonPropsType>`
+    width: 200px;
+    height: 60px;
+    border-radius: 83px;
+    background:  ${theme.colors.accent};
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;`}`
+
 

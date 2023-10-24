@@ -13,9 +13,7 @@ export const TechnologyName: FC<TechnologyNamePropsType>  = ({name}) => {
 };
 const StyledTechnologyName = styled.span`
   color: #FFF;
-
-  
   font-size: 24px;
-
   font-weight: 600;
+  margin-left: 25px;
 `
