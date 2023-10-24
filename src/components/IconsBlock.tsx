@@ -7,7 +7,7 @@ export const IconsBlock = () => {
     return (
         <SocialLinkBlock gap={'25px'}>
             <StyledIcon>
-                <StyledLink href=''>
+                <StyledLink href='#'>
                     <Icon iconId={'HeaderGitHub'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/>
                 </StyledLink>
             </StyledIcon>
