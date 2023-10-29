@@ -21,4 +21,5 @@ export const Footer = () => {
     );
 };
 const StyledFooter = styled.footer`
-  background-color: #0F1624;`
+  background-color: #0F1624;
+`

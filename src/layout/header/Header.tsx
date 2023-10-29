@@ -15,7 +15,7 @@ export const Header = () => {
                 <Wrapper justify={'space-between'} alignCustom={'center'}>
                     <Logo/>
                     <HeaderMenu menuItem={items}/>
-                    {/*<MobileMenu menuItem={items}/>*/}
+                    <MobileMenu menuItem={items}/>
                     <IconsBlock/>
                 </Wrapper>
             </Container>

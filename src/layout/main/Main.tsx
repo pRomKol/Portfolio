@@ -6,14 +6,16 @@ import {Button} from "../../components/button/Button";
 import photo from "../../sources/clipdrop.webp"
 import {Wrapper} from "../../components/wrappers/FlexWrapper";
 import {Container} from "../../components/Container";
-import {Icon} from "../../components/icon/Icon";
+
+import mySvg from '../../sources/test.svg';
+import {theme} from "../../components/globalstyle/Theme";
 
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <Wrapper alignCustom={'center'} justify={'space-between'}>
+                <Wrapper alignCustom={'center'} justify={'space-between'} wrap={'wrap'}>
                     <StyledContent>
                         <Title/>
                         <ShortBiography/>
@@ -24,7 +26,7 @@ export const Main = () => {
 
                     <Photo src={photo}/>
                     <StyledBackgroundImg>
-                        <Icon iconId={'backgroundImg'} width={"668"} height={"668"} viewBox={"0 0 668 668"}/>
+                        <img src={mySvg} alt={'avatarBackground'}/>
                     </StyledBackgroundImg>
                 </Wrapper>
 
@@ -52,11 +54,19 @@ const Photo = styled.img`
   border-radius: 50px 0px;
   border: 5px solid #8643DC;
   z-index: 1;
+  @media ${theme.media.mobile}{
+    width: 310px;
+    height: 380px;
+  }
 `
 const StyledBackgroundImg = styled.div`
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -275px;
+  top: 50px;
+  @media ${theme.media.mobile}{
+    width: 300px;
+    height: 300px;
+  }
 `
 
 

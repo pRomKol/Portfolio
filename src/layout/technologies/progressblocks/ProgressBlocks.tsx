@@ -28,4 +28,5 @@ const progressBlockArray = [
 
     }]
 const StyledProgressBlock = styled.div`
+    width: 100%;
 `

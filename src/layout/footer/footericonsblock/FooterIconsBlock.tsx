@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../components/icon/Icon";
 import styled from "styled-components";
+import {theme} from "../../../components/globalstyle/Theme";
 type SocialBlockPropsType = {
     gap?: string
 }
@@ -33,7 +34,11 @@ export const FooterIconsBlock = () => {
 };
 export const SocialLinkBlock = styled.ul<SocialBlockPropsType>`
   display: flex;
-  gap: ${props => props.gap || '0px'}
+  gap: ${props => props.gap || '0px'};
+  @media ${theme.media.tablet}{
+    display: none;
+  }
+  
 `
 export const StyledIcon = styled.li`
   `

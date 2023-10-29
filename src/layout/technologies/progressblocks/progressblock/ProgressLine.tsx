@@ -16,7 +16,6 @@ export const ProgressLine: FC<ProgressValuePropsType> = ({progressValue}) => {
 };
 
 const StyledProgressLine = styled.div`
-  width: 900px;
   height: 18px;
   border-radius: 83px;
   background-color: #162950;
