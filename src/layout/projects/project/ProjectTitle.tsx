@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {StyledProjectsPropsType} from "../../../components/titles/SectionTitle";
+import {font} from "../../../components/globalstyle/Common";
 
 export const ItemTitle = (props:StyledProjectsPropsType) => {
     return (
@@ -10,7 +11,7 @@ export const ItemTitle = (props:StyledProjectsPropsType) => {
     );
 };
  const StyledProjectTitle = styled.h3`
-   color: #FFF;
+   ${font({weight:500, Fmax: 30, Fmin: 25,})}
    
    margin: 40px auto 67px auto;
    font-size: 30px;

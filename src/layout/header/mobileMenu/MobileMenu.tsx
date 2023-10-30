@@ -34,8 +34,10 @@ export const MobileMenu = (props: { menuItem: Array<string> }) => {
 };
 const StyledHeaderNav = styled.nav`
 display: none;
+  
   @media ${theme.media.tablet} {
     display: block;
+    position: absolute; 
   }`
 
 
@@ -64,11 +66,11 @@ display: none;
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
   position: fixed;
-  top: 0;
-  right: 0;
+  //top: 0;
+  //right: 0;
   width: 100px;
   height: 100px;
-  background-color: #0F1624;
+  background-color: rgba(15, 22, 36, 0);
 
   span {
     display: block;
@@ -78,10 +80,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     position: absolute;
     left: 40px;
     bottom: 50px;
-    ${props => props.isOpen && css<{isOpen: boolean}>`
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
-
     &::before {
       content: '';
       display: block;
@@ -90,9 +92,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       background-color: #fff;
       position: absolute;
       transform: translateY(-10px);
-      ${props => props.isOpen && css<{isOpen: boolean}>`
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(-45deg) translateY(0px);
-    `}
+      `}
     }
 
     &::after {
@@ -103,10 +105,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       background-color: #fff;
       position: absolute;
       transform: translateY(10px);
-      ${props => props.isOpen && css<{isOpen: boolean}>`
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0px);
         width: 36px;
-    `}
+      `}
     }
   }`
 

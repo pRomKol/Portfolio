@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "../../../components/globalstyle/Common";
 
 export const Email = () => {
     return (
@@ -10,8 +11,6 @@ export const Email = () => {
 };
 
 const StyledEmail= styled.div`
-font-size: 22px;
-
-font-weight: 600;
-
-max-width: 143px`
+  
+  ${font({weight:600, Fmax: 22, Fmin: 16,})}
+  max-width: 143px`

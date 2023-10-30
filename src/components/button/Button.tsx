@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+
 import styled, {css} from "styled-components";
 import {theme} from "../globalstyle/Theme";
 type ButtonPropsType= {

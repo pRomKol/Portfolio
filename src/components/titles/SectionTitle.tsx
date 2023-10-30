@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "../globalstyle/Common";
 
 export type StyledProjectsPropsType = {
     value?: string
@@ -11,12 +12,12 @@ export type StyledProjectsPropsType = {
 export const SectionTitle = (props:StyledProjectsPropsType) => {
     return (
         <StyledSectionTitle >
-            {props.value || "Project"}
+            {props.value}
         </StyledSectionTitle>
     );
 };
 const StyledSectionTitle = styled.h2`
+  ${font({weight:600, Fmax: 46, Fmin: 38,})}
   padding-bottom: 70px;
-  font-size: 46px;
-  font-weight: 600;
+  white-space: nowrap;
 `

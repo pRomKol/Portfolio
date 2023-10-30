@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {Button} from "../../../components/button/Button";
 import {ItemTitle} from "./ProjectTitle";
 import {ProjectDescription} from "./ProjectDiscription";
+import {theme} from "../../../components/globalstyle/Theme";
 
 
 type ProjectsProps = {
@@ -38,6 +39,10 @@ const StyledItem = styled.div`
 const Image = styled.img`
   border-radius: 24px 8px 8px 8px;
   object-fit: fill;
+  @media ${theme.media.tablet}{
+    width: 100%;
+    
+  }
 `
 const ProjectWrapper = styled.div`
   padding: 25px 25px 40px 25px;

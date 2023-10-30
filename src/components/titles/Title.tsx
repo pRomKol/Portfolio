@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "../globalstyle/Common";
 
 export const Title = () => {
     return (
-        <StyledTitle> I am Roman Kolosov</StyledTitle>
+        <StyledTitle>
+            I am <span>Roman Kolosov</span>
+        </StyledTitle>
     );
 };
 
 const StyledTitle= styled.h1`
-  font-size: 54px;
-  font-weight: 600;
+  ${font({weight: 700, Fmax: 54, Fmin: 36})}
+span{
+    white-space: nowrap;
+  }  
 `

@@ -12,7 +12,7 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
                 <SectionTitle value={'Projects'}/>
-                <Wrapper wrap={'wrap'} gap={'60px 34px'}>
+                <ProjectsWrapper>
                     {/*<Project title={'Project 1'} imgSrc={image} description={'A'}/>*/}
                     {/*<Project title={'Project 2'} imgSrc={image} description={'B'}/>*/}
                     {/*<Project title={'Project 3'} imgSrc={image} description={'C'}/>*/}
@@ -20,12 +20,23 @@ export const Projects = () => {
                     {projectsArray.map((project) => (
                         <Project title={project.title} description={project.description} imgSrc={project.imgSrc}/>
                     ))}
-                </Wrapper>
+                </ProjectsWrapper>
             </Container>
 
         </StyledProjects>
     );
 };
+
+
+const ProjectsWrapper = styled.div`
+display: flex;
+gap: 60px 34px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1168px){
+    align-items: center;
+    justify-content: center;
+  } 
+`
 const StyledProjects = styled.section`
  padding-bottom: 140px;
 `

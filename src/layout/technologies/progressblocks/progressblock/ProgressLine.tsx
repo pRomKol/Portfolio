@@ -24,8 +24,6 @@ const StyledProgressLine = styled.div`
 const StyledProgress = styled.div<ProgressValuePropsType>`
   width: ${props => props.progressValue || 'auto'};
   background: ${theme.colors.accent};
-
-
   height: 100%;
   border-radius: 83px;
 `

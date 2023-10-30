@@ -23,6 +23,7 @@ export const Technologies = () => {
     );
 };
 const StyledTechnologies = styled.section`
+  
   display: flex;
   min-height: 80vh;
 `

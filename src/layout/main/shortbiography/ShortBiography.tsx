@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "../../../components/globalstyle/Common";
 
 export const ShortBiography = () => {
     return (
@@ -10,9 +11,7 @@ export const ShortBiography = () => {
     );
 };
 const StyledShortBiography = styled.h2`
-  color: #BCBCBC;
-  font-size: 18px;
-  font-weight: 500;
+${font({weight:500, Fmax: 18, Fmin: 16, color: '#BCBCBC'})}
   max-width: 482px;
   margin: 15px 0 60px 0;
 `
