@@ -71,7 +71,8 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
   width: 100px;
   height: 100px;
   background-color: rgba(15, 22, 36, 0);
-
+  right: 0;
+  top: 0;
   span {
     display: block;
     width: 36px;

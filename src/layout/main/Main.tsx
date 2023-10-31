@@ -15,7 +15,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <Wrapper alignCustom={'center'} justify={'space-around'} wrap={'wrap'}>
+                <MainWrapper>
                     <StyledContent>
                         <Title/>
                         <ShortBiography/>
@@ -27,11 +27,20 @@ export const Main = () => {
                     {/*<StyledBackgroundImg>*/}
                         <StyledBackground src={mySvg} alt={'avatarBackground'}/>
                     {/*</StyledBackgroundImg>*/}
-                </Wrapper>
+                </MainWrapper>
             </Container>
         </StyledMain>
     );
 };
+
+const MainWrapper = styled.div`
+display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media ${theme.media.laptop}{
+    flex-direction: column;
+  }
+`
 
 const StyledContent = styled.div`
   justify-content: start;
@@ -41,7 +50,7 @@ const StyledMain = styled.section`
   padding: 125px 0;
   display: flex;
   align-items: center;
-@media ${theme.media.tablet}{
+@media ${theme.media.laptop}{
   padding: 50px 0;
   align-items: start;
   min-height: auto;
@@ -56,7 +65,7 @@ const Photo = styled.img`
   border: 5px solid #8643DC;
   z-index: 1;
   position: relative;
-  @media ${theme.media.tablet}{
+  @media ${theme.media.laptop}{
     width: 310px;
     height: 380px;
     margin-top: 30px;

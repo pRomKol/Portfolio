@@ -32,7 +32,7 @@ const ProjectsWrapper = styled.div`
 display: flex;
 gap: 60px 34px;
   flex-wrap: wrap;
-  @media screen and (max-width: 1168px){
+  @media screen and (max-width: 1184px){
     align-items: center;
     justify-content: center;
   } 

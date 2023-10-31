@@ -37,6 +37,9 @@ const MenuItems = styled.ul`
   display: flex;
   gap: 80px;
   justify-content: center;
+@media screen and (max-width: 1024px) {
+  gap: 35px
+}
 `
 
 
