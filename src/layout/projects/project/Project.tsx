@@ -16,36 +16,31 @@ type ProjectsProps = {
 //export const Project = (props: ProjectsProps) => {
 export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
     return (
-
-        <StyledItem>
-            <ProjectWrapper>
-                <Image src={imgSrc}/>
-                <ItemTitle value={title}/>
-                <ProjectDescription projectValue={description}/>
-                <Button outlined>
-                    Look it Up
-                </Button>
-            </ProjectWrapper>
-        </StyledItem>
-
+        <StyledProject>
+            <Image src={imgSrc}/>
+            <ItemTitle value={title}/>
+            <ProjectDescription projectValue={description}/>
+            <Button outlined>
+                Look it Up
+            </Button>
+        </StyledProject>
     );
 };
 
 
-const StyledItem = styled.div`
-  display: flex;
-  border: 1px solid #A39D9D;
-  border-radius: 50px 0;`
 const Image = styled.img`
   border-radius: 24px 8px 8px 8px;
   object-fit: fill;
   width: 100%;
   
 `
-const ProjectWrapper = styled.div`
+const StyledProject = styled.div`
   padding: 25px 25px 40px 25px;
   display: flex;
   flex-direction: column;
-  max-width: 550px;
-  width: 100%;
+  min-width: 330px;
+  border: 1px solid #A39D9D;
+  border-radius: 50px 0;
+  width: 360px;
+  flex-grow: 1;
 `

@@ -23,11 +23,12 @@ export const Footer = () => {
 };
 const StyledFooter = styled.footer`
   background-color: #0F1624;
-  
+  padding: 20px 0;
 `
 const FooterWrapper = styled.div`
 display: flex;
   justify-content: space-between;
+  align-items: center;
   @media ${theme.media.tablet}{
     justify-content: space-around;  
   }

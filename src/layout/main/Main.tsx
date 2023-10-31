@@ -4,9 +4,7 @@ import {Title} from "../../components/titles/Title";
 import {ShortBiography} from "./shortbiography/ShortBiography";
 import {Button} from "../../components/button/Button";
 import photo from "../../sources/clipdrop.webp"
-import {Wrapper} from "../../components/wrappers/FlexWrapper";
 import {Container} from "../../components/Container";
-
 import mySvg from '../../sources/test.svg';
 import {theme} from "../../components/globalstyle/Theme";
 

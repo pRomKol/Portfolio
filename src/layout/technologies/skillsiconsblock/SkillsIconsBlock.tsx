@@ -20,6 +20,8 @@ const StyledSkillIconsBlock = styled.div`
   gap: 50px;
 @media ${theme.media.laptop}{
   gap: 25px;
-  flex-direction: column;
 }
+  @media screen and (max-width: 400px){
+    flex-direction: column;
+  }
 `
