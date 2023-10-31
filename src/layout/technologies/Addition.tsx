@@ -14,7 +14,7 @@ export const Addition = () => {
 const StyledAddition = styled.span`
   ${font({weight:600, Fmax: 44, Fmin: 36,})}
   margin: 100px 0 70px 0;
-  font-size: 44px;
-  font-weight: 600;
   
+ display: flex;
+  text-align: center;
 `

@@ -23,7 +23,7 @@ export const Main = () => {
                             Let`s begin
                         </Button>
                     </StyledContent>
-                    <Photo src={photo}/>
+                     <Photo src={photo}/>
                     {/*<StyledBackgroundImg>*/}
                         <StyledBackground src={mySvg} alt={'avatarBackground'}/>
                     {/*</StyledBackgroundImg>*/}
@@ -44,6 +44,11 @@ display: flex;
 
 const StyledContent = styled.div`
   justify-content: start;
+  @media ${theme.media.laptop} {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 `
 const StyledMain = styled.section`
   min-height: 100vh;
@@ -61,8 +66,11 @@ const Photo = styled.img`
   width: 380px;
   height: 450px;
   object-fit: cover;
+  border: 5px solid;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
   border-radius: 50px 0;
-  border: 5px solid #8643DC;
   z-index: 1;
   position: relative;
   @media ${theme.media.laptop}{

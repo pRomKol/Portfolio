@@ -12,5 +12,5 @@ export const Email = () => {
 
 const StyledEmail= styled.div`
   
-  ${font({weight:600, Fmax: 22, Fmin: 16,})}
+  ${font({weight:600, Fmax: 22, Fmin: 12,})}
   max-width: 143px`

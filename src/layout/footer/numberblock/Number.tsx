@@ -10,5 +10,5 @@ export const Number = () => {
     );
 };
 const StyledNumber = styled.div`
-  ${font({weight:600, Fmax: 22, Fmin: 16,})}
+  ${font({weight:600, Fmax: 22, Fmin: 12,})}
   max-width: 143px`

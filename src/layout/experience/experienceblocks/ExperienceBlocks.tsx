@@ -18,12 +18,15 @@ const StyledExperienceBlocks = styled(Wrapper)`
   --items-count: 4;
   gap: var(--gap);
   --gap: 32px;
-  
   --block-max-width: 260px;
   flex-direction: row;
   position: relative;
+  @media ${theme.media.tablet}{
+    flex-wrap: wrap;
+  }
 
   &::before {
+    @media ${theme.media.tablet}{display: none}
     content: '';
     background: ${theme.colors.accent};
     position: absolute;
