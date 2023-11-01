@@ -21,9 +21,12 @@ export const Main = () => {
                             Let`s begin
                         </Button>
                     </StyledContent>
-                     <Photo src={photo}/>
+
+                         <Photo src={photo}/>
+                         <StyledBackground src={mySvg} alt={'avatarBackground'}/>
+
                     {/*<StyledBackgroundImg>*/}
-                        <StyledBackground src={mySvg} alt={'avatarBackground'}/>
+
                     {/*</StyledBackgroundImg>*/}
                 </MainWrapper>
             </Container>
@@ -65,26 +68,25 @@ const Photo = styled.img`
   height: 450px;
   object-fit: cover;
   border: 5px solid;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  
   border-image: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
   border-radius: 50px 0;
-  z-index: 1;
   position: relative;
+  z-index: 1;
+  
+  
   @media ${theme.media.laptop}{
     width: 310px;
     height: 380px;
     margin-top: 30px;
   }
 `
-
-
-
 const StyledBackground = styled.img`
   position: absolute;
-  //right: -275px;
-  //top: 50px;
-  @media ${theme.media.tablet}{
+  right: 0;
+  top: 400px;
+  
+  @media ${theme.media.tablet} {
     width: 300px;
     height: 300px;
   }`

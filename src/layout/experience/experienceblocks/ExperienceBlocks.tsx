@@ -21,12 +21,30 @@ const StyledExperienceBlocks = styled(Wrapper)`
   --block-max-width: 260px;
   flex-direction: row;
   position: relative;
-  @media ${theme.media.tablet}{
-    flex-wrap: wrap;
+  
+  @media ${theme.media.tablet} {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
-
+  &::after {
+    display: none;
+    @media ${theme.media.tablet} {
+      content: '';
+      background: ${theme.colors.accent};
+      position: absolute;
+      height: 10px;
+      transform: rotate(-90deg);
+      width: 397px;
+      display: block;
+      left: -193px;
+      top: 240px;
+    }
+  }
   &::before {
-    @media ${theme.media.tablet}{display: none}
+    @media ${theme.media.tablet} {
+      display: none;
+    }
     content: '';
     background: ${theme.colors.accent};
     position: absolute;
@@ -34,8 +52,8 @@ const StyledExperienceBlocks = styled(Wrapper)`
     height: 10px;
     --offset: min(calc((100% - (var(--items-count) - 1) * var(--gap)) / var(--items-count) / 2), var(--block-max-width) / 2);
     left: var(--offset);
-    
     top: 40px;
+
   }
 `
 const experienceArray =  [

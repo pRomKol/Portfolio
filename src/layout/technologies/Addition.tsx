@@ -11,10 +11,11 @@ export const Addition = () => {
 };
 
 
-const StyledAddition = styled.span`
+const StyledAddition = styled.h2`
   ${font({weight:600, Fmax: 44, Fmin: 36,})}
   margin: 100px 0 70px 0;
   
  display: flex;
   text-align: center;
+  
 `

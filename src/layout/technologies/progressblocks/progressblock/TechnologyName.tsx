@@ -11,7 +11,7 @@ export const TechnologyName: FC<TechnologyNamePropsType>  = ({name}) => {
         </StyledTechnologyName>
     );
 };
-const StyledTechnologyName = styled.span`
+const StyledTechnologyName = styled.h3`
   color: #FFF;
   font-size: 24px;
   font-weight: 600;
