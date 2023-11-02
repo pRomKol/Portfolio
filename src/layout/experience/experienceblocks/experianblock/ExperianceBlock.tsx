@@ -1,9 +1,7 @@
 import React, {FC} from 'react';
 import {Years} from "./yearblock/Years";
-
 import {ExperienceDescription} from "./experiencediscription/ExperienceDescription";
-import styled from "styled-components";
-import {theme} from "../../../../components/globalstyle/Theme";
+import {S} from '../../Experince_Styles'
 
 type ExperienceBlockPropsType = {
     year: string
@@ -11,22 +9,12 @@ type ExperienceBlockPropsType = {
 }
 export const ExperienceBlock: FC<ExperienceBlockPropsType> = ({year, description}) => {
     return (
-        <StyledExperienceBlock>
+        <S.ExperienceBlock>
             <Years value={year}/>
             <ExperienceDescription value={description}/>
-        </StyledExperienceBlock>
+        </S.ExperienceBlock>
     );
 };
-const StyledExperienceBlock = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-@media ${theme.media.tablet} {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-`
+
 
 

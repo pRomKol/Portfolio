@@ -1,28 +1,13 @@
 import React, {FC} from 'react';
-import styled from "styled-components";
-import {theme} from "../../../../../components/globalstyle/Theme";
+import {S} from '../../../Experince_Styles'
 type ExperienceDescriptionPropsType = {
     value: string
 }
 export const ExperienceDescription: FC<ExperienceDescriptionPropsType> = ({value}) => {
     return (
-        <StyledExperienceDescription>
+        <S.ExperienceDescription>
             {value}
-        </StyledExperienceDescription>
+        </S.ExperienceDescription>
     );
 };
 
-const StyledExperienceDescription = styled.div`
-
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  overflow-wrap: break-word;
-  margin-top: 40px;
-@media ${theme.media.tablet} {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 0 0 0 40px;
-}
-`

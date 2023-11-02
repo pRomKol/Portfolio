@@ -1,5 +1,4 @@
-import yaReact from 'react';
-import styled from "styled-components";
+import {S} from './Technologies_Styles'
 import {SectionTitle} from "../../components/titles/SectionTitle";
 import {ProgressBlocks} from "./progressblocks/ProgressBlocks";
 import {SkillsIconsBlock} from "./skillsiconsblock/SkillsIconsBlock";
@@ -9,7 +8,7 @@ import {Addition} from "./Addition";
 
 export const Technologies = () => {
     return (
-        <StyledTechnologies>
+        <S.Technologies>
             <Container>
                 <SectionTitle value={'Technologies'}/>
                 <Wrapper  direction={'column'} alignCustom={'center'}>
@@ -18,11 +17,8 @@ export const Technologies = () => {
                     <SkillsIconsBlock/>
                 </Wrapper>
             </Container>
-        </StyledTechnologies>
+        </S.Technologies>
 
     );
 };
-const StyledTechnologies = styled.section`
-  display: flex;
-  min-height: 80vh;
-`
+

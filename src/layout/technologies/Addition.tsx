@@ -1,21 +1,13 @@
 import React from 'react';
-import styled from "styled-components";
-import {font} from "../../components/globalstyle/Common";
+import {S} from './Technologies_Styles'
+
 
 export const Addition = () => {
     return (
-        <StyledAddition>
+        <S.Addition>
             Additional technologies and skills
-        </StyledAddition>
+        </S.Addition>
     );
 };
 
 
-const StyledAddition = styled.h2`
-  ${font({weight:600, Fmax: 44, Fmin: 36,})}
-  margin: 100px 0 70px 0;
-  
- display: flex;
-  text-align: center;
-  
-`

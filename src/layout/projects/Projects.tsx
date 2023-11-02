@@ -1,45 +1,27 @@
 import {Project} from "./project/Project";
 import {SectionTitle} from "../../components/titles/SectionTitle";
-import {Wrapper} from "../../components/wrappers/FlexWrapper";
-import styled from "styled-components";
 import image from "../../sources/Projects.jpg"
 import {Container} from "../../components/Container";
+import {S} from './Projects_Styles'
+import React from "react";
 
-export const Projects = () => {
-
-
+export const Projects: React.FC = () => {
     return (
-        <StyledProjects>
+        <S.Projects>
             <Container>
                 <SectionTitle value={'Projects'}/>
-                <ProjectsWrapper>
-                    {/*<Project title={'Project 1'} imgSrc={image} description={'A'}/>*/}
-                    {/*<Project title={'Project 2'} imgSrc={image} description={'B'}/>*/}
-                    {/*<Project title={'Project 3'} imgSrc={image} description={'C'}/>*/}
-                    {/*<Project title={'Project 4'} imgSrc={image} description={'D'}/>*/}
+                <S.ProjectsWrapper>
                     {projectsArray.map((project) => (
                         <Project title={project.title} description={project.description} imgSrc={project.imgSrc}/>
                     ))}
-                </ProjectsWrapper>
+                </S.ProjectsWrapper>
             </Container>
-
-        </StyledProjects>
+        </S.Projects>
     );
 };
 
 
-const ProjectsWrapper = styled.div`
-display: flex;
-gap: 60px 34px;
-  flex-wrap: wrap;
-  @media screen and (max-width: 1184px){
-    align-items: center;
-    justify-content: center;
-  } 
-`
-const StyledProjects = styled.section`
- padding-bottom: 140px;
-`
+
 
 
 const projectsArray = [

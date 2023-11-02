@@ -1,14 +1,16 @@
-
 import {ProgressBlock} from "./progressblock/ProgressBlock";
-import styled from "styled-components";
+import {S} from '../Technologies_Styles'
+import React from "react";
 
-export const ProgressBlocks = () => {
+export const ProgressBlocks:React.FC = () => {
     return (
-        <StyledProgressBlock>
+        <S.ProgressBlock>
             {progressBlockArray.map((block) => ( <ProgressBlock progress={block.progress} title={block.title}/>))}
-        </StyledProgressBlock>
+        </S.ProgressBlock>
     );
 };
+
+
 const progressBlockArray = [
     {
         progress: '78%',
@@ -27,6 +29,3 @@ const progressBlockArray = [
         title: 'Styled components'
 
     }]
-const StyledProgressBlock = styled.div`
-    width: 100%;
-`

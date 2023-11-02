@@ -1,93 +1,30 @@
 import React from 'react';
-import styled from "styled-components";
 import {Title} from "../../components/titles/Title";
 import {ShortBiography} from "./shortbiography/ShortBiography";
 import {Button} from "../../components/button/Button";
 import photo from "../../sources/clipdrop.webp"
 import {Container} from "../../components/Container";
 import mySvg from '../../sources/test.svg';
-import {theme} from "../../components/globalstyle/Theme";
+import {S} from './Main_Styles'
 
 
-export const Main = () => {
+export const Main: React.FC = () => {
     return (
-        <StyledMain>
+        <S.Main>
             <Container>
-                <MainWrapper>
-                    <StyledContent>
+                <S.MainWrapper>
+                    <S.Content>
                         <Title/>
                         <ShortBiography/>
                         <Button primary>
                             Let`s begin
                         </Button>
-                    </StyledContent>
-
-                         <Photo src={photo}/>
-                         <StyledBackground src={mySvg} alt={'avatarBackground'}/>
-
-                    {/*<StyledBackgroundImg>*/}
-
-                    {/*</StyledBackgroundImg>*/}
-                </MainWrapper>
+                    </S.Content>
+                    <S.Photo src={photo}/>
+                    <S.BackgroundImg src={mySvg} alt={'Avatar Background'}/>
+                </S.MainWrapper>
             </Container>
-        </StyledMain>
+        </S.Main>
     );
 };
-
-const MainWrapper = styled.div`
-display: flex;
-  align-items: center;
-  justify-content: space-around;
-  @media ${theme.media.laptop}{
-    flex-direction: column;
-  }
-`
-
-const StyledContent = styled.div`
-  justify-content: start;
-  @media ${theme.media.laptop} {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-`
-const StyledMain = styled.section`
-  min-height: 100vh;
-  padding: 125px 0;
-  display: flex;
-  align-items: center;
-@media ${theme.media.laptop}{
-  padding: 50px 0;
-  align-items: start;
-  min-height: auto;
-}
-`
-
-const Photo = styled.img`
-  width: 380px;
-  height: 450px;
-  object-fit: cover;
-  border: 5px solid;
-  
-  border-image: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
-  border-radius: 50px 0;
-  position: relative;
-  z-index: 1;
-  
-  
-  @media ${theme.media.laptop}{
-    width: 310px;
-    height: 380px;
-    margin-top: 30px;
-  }
-`
-const StyledBackground = styled.img`
-  position: absolute;
-  right: 0;
-  top: 400px;
-  
-  @media ${theme.media.tablet} {
-    width: 300px;
-    height: 300px;
-  }`
 

@@ -1,61 +1,16 @@
 import React from 'react';
-import styled from "styled-components";
 import {ExperienceBlock} from "./experianblock/ExperianceBlock";
-import {Wrapper} from "../../../components/wrappers/FlexWrapper";
-import {theme} from "../../../components/globalstyle/Theme";
-
+import {S} from '../Experince_Styles'
 
 
 export const ExperienceBlocks = () => {
     return (
-        <StyledExperienceBlocks alignCustom={'center'} justify={'space-between'}>
+        <S.ExperienceBlocks alignCustom={'center'} justify={'space-between'}>
             {experienceArray.map((exp) => (<ExperienceBlock year={exp.year} description={exp.description}/>))}
-        </StyledExperienceBlocks>
+        </S.ExperienceBlocks>
     );
 }
-const StyledExperienceBlocks = styled(Wrapper)`
-  height: auto;
-  --items-count: 4;
-  gap: var(--gap);
-  --gap: 32px;
-  --block-max-width: 260px;
-  flex-direction: row;
-  position: relative;
-  
-  @media ${theme.media.tablet} {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  &::after {
-    display: none;
-    @media ${theme.media.tablet} {
-      content: '';
-      background: ${theme.colors.accent};
-      position: absolute;
-      height: 10px;
-      transform: rotate(-90deg);
-      width: 397px;
-      display: block;
-      left: -193px;
-      top: 240px;
-    }
-  }
-  &::before {
-    @media ${theme.media.tablet} {
-      display: none;
-    }
-    content: '';
-    background: ${theme.colors.accent};
-    position: absolute;
-    width: calc(100% - var(--offset) * 2);
-    height: 10px;
-    --offset: min(calc((100% - (var(--items-count) - 1) * var(--gap)) / var(--items-count) / 2), var(--block-max-width) / 2);
-    left: var(--offset);
-    top: 40px;
 
-  }
-`
 const experienceArray =  [
     {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',

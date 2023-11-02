@@ -1,19 +1,13 @@
 import React, {FC} from 'react';
-import {ItemTitle} from "../../../projects/project/ProjectTitle";
-import styled from "styled-components";
+import {S} from '../../Technologies_Styles'
 type TechnologyNamePropsType = {
     name: string
 }
 export const TechnologyName: FC<TechnologyNamePropsType>  = ({name}) => {
     return (
-        <StyledTechnologyName>
+        <S.TechnologyName>
             {name}
-        </StyledTechnologyName>
+        </S.TechnologyName>
     );
 };
-const StyledTechnologyName = styled.h3`
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 600;
-  margin-left: 25px;
-`
+

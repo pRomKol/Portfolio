@@ -1,21 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
-import {font} from "../../../components/globalstyle/Common";
-import {theme} from "../../../components/globalstyle/Theme";
-
+import {S} from './ShortBiography_Styles'
 export const ShortBiography = () => {
     return (
-        <StyledShortBiography>
+        <S.ShortBiography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </StyledShortBiography>
+        </S.ShortBiography>
 
     );
 };
-const StyledShortBiography = styled.h2`
-${font({weight:500, Fmax: 18, Fmin: 16, color: '#BCBCBC'})}
-  max-width: 482px;
-  margin: 15px 0 60px 0;
-  @media ${theme.media.laptop}{
-  text-align: center;
-  }
-`
+
+
