@@ -10,10 +10,10 @@ export type StyledProjectsPropsType = {
     description?: string
     projectValue?: string
 }
-export const SectionTitle = (props:StyledProjectsPropsType) => {
+export const SectionTitle:React.FC<StyledProjectsPropsType> = ({value}) => {
     return (
         <StyledSectionTitle >
-            {props.value}
+            {value}
         </StyledSectionTitle>
     );
 };

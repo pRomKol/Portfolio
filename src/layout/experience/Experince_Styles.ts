@@ -90,7 +90,7 @@ const Years = styled.h2`
 }`
 
 //Experience description
-const ExperienceDescription = styled.div`
+const ExperienceDescription = styled.span`
 
   display: flex;
   text-align: center;

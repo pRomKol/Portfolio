@@ -3,19 +3,18 @@ import {theme} from "../../components/globalstyle/Theme";
 import {font} from "../../components/globalstyle/Common";
 //Section styles
 const ProjectsWrapper = styled.div`
-display: flex;
-gap: 60px 34px;
+  display: flex;
+  gap: 60px 34px;
   flex-wrap: wrap;
-  @media screen and (max-width: 1184px){
+  @media screen and (max-width: 1184px) {
     align-items: center;
     justify-content: center;
-  } 
+  }
 `
 
 const Projects = styled.section`
- padding-bottom: 140px;
+  padding-bottom: 140px;
 `
-
 
 
 //Project styles
@@ -23,7 +22,7 @@ const Image = styled.img`
   border-radius: 24px 8px 8px 8px;
   object-fit: fill;
   width: 100%;
-  
+
 `
 
 const Project = styled.div`
@@ -43,7 +42,8 @@ const ProjectDescription = styled.span`
   margin-bottom: 50px;
   font-weight: 500;
   position: relative;
-  &::before{
+
+  &::before {
     content: '';
     height: 4px;
     background: ${theme.colors.accent};
@@ -56,15 +56,15 @@ const ProjectDescription = styled.span`
 `
 //Project title styles
 const ProjectTitle = styled.h3`
-   ${font({weight:500, Fmax: 30, Fmin: 25,})}
-   
-   margin: 40px auto 67px auto;
-   font-size: 30px;
-   //margin: 40px 25px 67px 0;
-   font-weight: 600;
-   line-height: 88.5%; 
+  ${font({weight: 500, Fmax: 30, Fmin: 25,})}
 
- `
+  margin: 40px auto 67px auto;
+  font-size: 30px;
+  //margin: 40px 25px 67px 0;
+  font-weight: 600;
+  line-height: 88.5%;
+
+`
 export const S = {
     Projects,
     ProjectsWrapper,

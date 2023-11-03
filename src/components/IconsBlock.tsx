@@ -1,30 +1,31 @@
 import {Icon} from "./icon/Icon";
-import {SocialLinkBlock, StyledItem, StyledLink} from "../layout/footer/footericonsblock/FooterIconsBlock";
+import {S} from "./IconsBlock_Styles"
+import React from "react";
 
 
 
-export const IconsBlock = () => {
+export const IconsBlock:React.FC = () => {
     return (
-        <SocialLinkBlock gap={'25px'}>
-            <StyledItem>
-                <StyledLink href='#'>
+        <S.SocialLinkBlock gap={'25px'}>
+            <S.Item>
+                <S.Link href='#'>
                     <Icon iconId={'HeaderGitHub'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/>
-                </StyledLink>
-            </StyledItem>
+                </S.Link>
+            </S.Item>
 
-            <StyledItem>
-                <StyledLink href=''>
+            <S.Item>
+                <S.Link href=''>
                     <Icon iconId={'HeaderLinkedIn'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/>
-                </StyledLink>
-            </StyledItem>
+                </S.Link>
+            </S.Item>
 
-            <StyledItem>
-                <StyledLink href=''>
+            <S.Item>
+                <S.Link href=''>
                     <Icon iconId={'HeaderTelegram'} viewBox={'0 0 35 30'} width={'35'} height={'30'}/>
-                </StyledLink>
-            </StyledItem>
+                </S.Link>
+            </S.Item>
 
-        </SocialLinkBlock>
+        </S.SocialLinkBlock>
     );
 };
 

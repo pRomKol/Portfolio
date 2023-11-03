@@ -5,7 +5,7 @@ import {FooterIconsBlock} from "./footericonsblock/FooterIconsBlock";
 import {Container} from "../../components/Container";
 import {S} from './Footer_Styles'
 
-export const Footer = () => {
+export const Footer:React.FC = () => {
     return (
         <S.Footer>
             <Container>

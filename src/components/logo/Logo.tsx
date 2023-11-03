@@ -3,15 +3,12 @@ import {Icon} from "../icon/Icon";
 import styled from "styled-components";
 
 
-export const Logo = () => {
+export const Logo:React.FC = () => {
     return (
-        <StyledLogo>
-            <Icon iconId={'headerLogo'}/>
-        </StyledLogo>
-
-);
+        <Icon iconId={'headerLogo'}/>
+    );
 };
-const StyledLogo = styled.div`
-`
+
+
 
 

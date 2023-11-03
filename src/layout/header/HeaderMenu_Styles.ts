@@ -82,6 +82,7 @@ display: none;
   display: flex;
     justify-content: center;
     align-items: center;
+    
   `}
   ul {
     display: flex;
@@ -100,6 +101,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
   background-color: rgba(15, 22, 36, 0);
   right: 0;
   top: -10px;
+  z-index: 9999 ;
   span {
     display: block;
     width: 36px;
@@ -108,6 +110,8 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     position: absolute;
     left: 40px;
     bottom: 50px;
+    
+    
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
@@ -136,6 +140,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0px);
         width: 36px;
+        
       `}
     }
   }`

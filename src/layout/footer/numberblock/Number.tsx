@@ -1,20 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
-import {font} from "../../../components/globalstyle/Common";
-
+import {S} from '../Footer_Styles'
 export const Number = () => {
     return (
-        <StyledNumber>
+        <S.Number>
             Call me: <br/>
-            <TelephoneLink>
+            <S.TelephoneLink>
                 +375295997429
-            </TelephoneLink>
-        </StyledNumber>
+            </S.TelephoneLink>
+        </S.Number>
     );
 };
-const StyledNumber = styled.div`
-  ${font({weight:600, Fmax: 22, Fmin: 16,})}
-  `
-const TelephoneLink = styled.a.attrs(()=>({
-    href: 'tel:+375295997429'
-}))``

@@ -34,19 +34,14 @@ const Main = styled.section`
 const Photo = styled.img`
   width: 380px;
   height: 450px;
-  object-fit: cover;
-  border: 5px solid;
-  
-  border-image: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
+  object-fit:  cover;
+  border: 5px;
   border-radius: 50px 0;
-  position: relative;
-  z-index: 1;
   
-  
+ 
   @media ${theme.media.laptop}{
     width: 310px;
     height: 380px;
-    margin-top: 30px;
   }
 `
 

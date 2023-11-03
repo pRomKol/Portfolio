@@ -12,7 +12,9 @@ export const Projects: React.FC = () => {
                 <SectionTitle value={'Projects'}/>
                 <S.ProjectsWrapper>
                     {projectsArray.map((project) => (
-                        <Project title={project.title} description={project.description} imgSrc={project.imgSrc}/>
+                        <Project title={project.title}
+                                 description={project.description}
+                                 imgSrc={project.imgSrc}/>
                     ))}
                 </S.ProjectsWrapper>
             </Container>

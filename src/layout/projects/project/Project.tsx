@@ -11,7 +11,7 @@ type ProjectsProps = {
     description: string
 }
 
-//export const Project = (props: ProjectsProps) => {
+
 export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
     return (
         <S.Project>
