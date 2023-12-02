@@ -11,8 +11,9 @@ export const Projects: React.FC = () => {
             <Container>
                 <SectionTitle value={'Projects'}/>
                 <S.ProjectsWrapper>
-                    {projectsArray.map((project) => (
-                        <Project title={project.title}
+                    {projectsArray.map((project, index) => (
+                        <Project key={index}
+                                 title={project.title}
                                  description={project.description}
                                  imgSrc={project.imgSrc}/>
                     ))}
@@ -21,9 +22,6 @@ export const Projects: React.FC = () => {
         </S.Projects>
     );
 };
-
-
-
 
 
 const projectsArray = [

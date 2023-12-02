@@ -8,7 +8,7 @@ export const IconsBlock:React.FC = () => {
     return (
         <S.SocialLinkBlock gap={'25px'}>
             <S.Item>
-                <S.Link href='#'>
+                <S.Link href='https://github.com/pRomKol'>
                     <Icon iconId={'HeaderGitHub'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/>
                 </S.Link>
             </S.Item>
