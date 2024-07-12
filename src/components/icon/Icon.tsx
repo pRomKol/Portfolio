@@ -9,7 +9,6 @@ export type IconsPropsType = {
     heightValue?: string;
     viewBox?: string
     viewBoxValue?: string;
-
     fill?: string
 }
 export const Icon: FC<IconsPropsType> = ({width, height, viewBox, iconId}) => {

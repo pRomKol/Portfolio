@@ -20,7 +20,7 @@ export const IconsBlock:React.FC = () => {
             </S.Item>
 
             <S.Item>
-                <S.Link href=''>
+                <S.Link href='https://t.me/Nopeeeeeeeeeep'>
                     <Icon iconId={'HeaderTelegram'} viewBox={'0 0 35 30'} width={'35'} height={'30'}/>
                 </S.Link>
             </S.Item>

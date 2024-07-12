@@ -10,6 +10,7 @@ type ButtonPropsType= {
 
 export const Button = styled.button<ButtonPropsType>`
   ${props => props.primary &&  css<ButtonPropsType>`
+    
     width: 240px;
   height: 60px;
   border-radius: 83px;
@@ -17,6 +18,11 @@ export const Button = styled.button<ButtonPropsType>`
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    
   `} 
   ${props => props.outlined && css<ButtonPropsType>`
     width: 200px;
@@ -25,6 +31,10 @@ export const Button = styled.button<ButtonPropsType>`
     background:  ${theme.colors.accent};
     font-size: 20px;
     font-weight: 600;
-    cursor: pointer;`}`
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }`}`
 
 

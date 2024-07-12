@@ -1,17 +1,16 @@
 import React from 'react';
-import {GitSkillsIcon} from "./giticon/GitSkillsIcon";
-import {GitHubSkillIcon} from "./githubicon/GitGubSkillsIcon";
-import {FigmaSkillsIcon} from "./figmaskillsicon/FigmaSkillsIcon";
 import styled from "styled-components";
 import {theme} from "../../../components/globalstyle/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 
 export const SkillsIconsBlock = () => {
     return (
         <StyledSkillIconsBlock>
-            <GitSkillsIcon/>
-            <GitHubSkillIcon/>
-            <FigmaSkillsIcon/>
+            <Icon iconId={'gitLogo'} height={'100'} width={'100'} viewBox={'0 0 100 100'}/>
+            <Icon iconId={'gitHubSkill'} height={'100'} width={'100'} viewBox={'0 0 100 100'}/>
+            <Icon iconId={'figmaLogo'} height={'100'} width={'100'} viewBox={'0 0 100 100'}/>
+            <Icon iconId={'reactLogo'} height={'100'} width={'100'} viewBox={'0 0 100 100'}/>
         </StyledSkillIconsBlock>
     );
 };

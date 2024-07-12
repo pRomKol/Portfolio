@@ -5,13 +5,13 @@ import {Container} from "../../components/Container";
 import {Wrapper} from "../../components/wrappers/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
-import React from "react";
+import React, {useEffect} from "react";
 
 export const items = ['Projects', 'Technologies', 'About me']
 export const Header: React.FC = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 768;
-    React.useEffect(() => {
+    useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
