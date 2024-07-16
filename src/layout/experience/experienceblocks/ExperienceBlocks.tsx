@@ -17,12 +17,12 @@ export const ExperienceBlocks = () => {
 
 const experienceArray = [
     {
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',
-        year: '1999'
+        description: 'I started learning front-end development, and also began studying at an IT incubator this year',
+        year: '2021'
     },
     {
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',
-        year: '2000'
+        description: 'I have completed my studies at the IT incubator and started looking for my first job',
+        year: '2022'
     },
     {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',

@@ -15,7 +15,7 @@ export const Main: React.FC = () => {
         <S.Main>
             <Container>
                 <S.MainWrapper>
-                    <S.Content>
+                    <S.Content id='aboutMe'>
                         <Title/>
                         <ShortBiography/>
                         <Button primary>

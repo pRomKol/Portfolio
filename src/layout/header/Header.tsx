@@ -5,9 +5,17 @@ import {Container} from "../../components/Container";
 import {Wrapper} from "../../components/wrappers/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
-import React, {useEffect} from "react";
+import React, {useEffect} from "react"
+export type MenuItems = {
+    title: string
+    href: string
 
-export const items = ['Projects', 'Technologies', 'About me']
+}
+export const items = [
+    {title:'Projects', href: '#projects'},
+    {title:'Technologies', href: '#technologies'},
+    {title:'About me', href: '#aboutMe'}
+]
 export const Header: React.FC = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 768;

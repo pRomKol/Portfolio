@@ -23,24 +23,12 @@ const ExperienceBlocks = styled(Wrapper)`
     flex-direction: column;
     align-items: start;
   }
-  &::after {
-    display: none;
-    @media ${theme.media.tablet} {
-      content: '';
-      background: ${theme.colors.accent};
-      position: absolute;
-      height: 10px;
-      transform: rotate(-90deg);
-      width: 397px;
-      display: block;
-      left: -193px;
-      top: 240px;
-    }
-  }
+  
   &::before {
     @media ${theme.media.tablet} {
       display: none;
     }
+    
     content: '';
     background: ${theme.colors.accent};
     position: absolute;
@@ -49,8 +37,6 @@ const ExperienceBlocks = styled(Wrapper)`
     --offset: min(calc((100% - (var(--items-count) - 1) * var(--gap)) / var(--items-count) / 2), var(--block-max-width) / 2);
     left: var(--offset);
     top: 40px;
-
-  }
 `
 
 //Experience block styles
@@ -59,7 +45,9 @@ const ExperienceBlock = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
+  height: 225px;
 @media ${theme.media.tablet} {
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -91,13 +79,12 @@ const Years = styled.h2`
 
 //Experience description
 const ExperienceDescription = styled.span`
-
   display: flex;
   text-align: center;
   justify-content: center;
   overflow-wrap: break-word;
   margin-top: 40px;
-@media ${theme.media.tablet} {
+  @media ${theme.media.tablet} {
   display: flex;
   flex-direction: column;
   text-align: left;

@@ -14,7 +14,7 @@ export const IconsBlock:React.FC = () => {
             </S.Item>
 
             <S.Item>
-                <S.Link href=''>
+                <S.Link href='https://www.linkedin.com/in/roman-kolosov-a83b29314/'>
                     <Icon iconId={'HeaderLinkedIn'} viewBox={'0 0 33 33'} width={'33'} height={'33'}/>
                 </S.Link>
             </S.Item>

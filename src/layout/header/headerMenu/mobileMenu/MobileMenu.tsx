@@ -2,9 +2,10 @@ import {Menu} from "../../menu/Menu";
 import React, {useState} from "react";
 import {S} from "../../HeaderMenu_Styles"
 import {IconsBlock} from "../../../../components/IconsBlock";
+import {MenuItems} from "../../Header";
 
 
-export const MobileMenu:React.FC<{ menuItem: Array<string> }> = (props: { menuItem: Array<string> }) => {
+export const MobileMenu:React.FC<{ menuItem: Array<MenuItems> }> = (props: { menuItem: Array<MenuItems> }) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const onBurgerBtnClick = () => { setMenuIsOpen(!menuIsOpen) }
     return (

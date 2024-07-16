@@ -7,7 +7,7 @@ import React from "react";
 
 export const Projects: React.FC = () => {
     return (
-        <S.Projects>
+        <S.Projects id='projects'>
             <Container>
                 <SectionTitle value={'Projects'}/>
                 <S.ProjectsWrapper>
@@ -15,7 +15,9 @@ export const Projects: React.FC = () => {
                         <Project key={index}
                                  title={project.title}
                                  description={project.description}
-                                 imgSrc={project.imgSrc}/>
+                                 imgSrc={project.imgSrc}
+                                 href={project.href}/>
+
                     ))}
                 </S.ProjectsWrapper>
             </Container>
@@ -26,9 +28,11 @@ export const Projects: React.FC = () => {
 
 const projectsArray = [
     {
-        title: 'PROJECT 1',
+        title: 'Task list',
         imgSrc: image,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        description: 'This is a tasks list where you can set tasks and track their completion, but in order to do this, you need to register :) You can use a common password and login to view the functionality',
+        href: 'https://check-list-eight.vercel.app/'
+
     },
     {
         title: 'PROJECT 2',

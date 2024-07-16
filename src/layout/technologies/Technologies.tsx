@@ -8,7 +8,7 @@ import {Addition} from "./Addition";
 
 export const Technologies = () => {
     return (
-        <S.Technologies>
+        <S.Technologies id='technologies'>
             <Container>
                 <SectionTitle value={'Technologies'}/>
                 <Wrapper  direction={'column'} alignCustom={'center'}>

@@ -10,7 +10,7 @@ type ButtonPropsType= {
 
 export const Button = styled.button<ButtonPropsType>`
   ${props => props.primary &&  css<ButtonPropsType>`
-    
+    z-index: 9;
     width: 240px;
   height: 60px;
   border-radius: 83px;

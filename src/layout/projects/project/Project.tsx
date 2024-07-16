@@ -9,18 +9,21 @@ type ProjectsProps = {
     title: string
     imgSrc: string
     description: string
+    href?: string
 }
 
 
-export const Project: FC<ProjectsProps> = ({title, description, imgSrc}) => {
+export const Project: FC<ProjectsProps> = ({title, description, imgSrc, href}) => {
     return (
         <S.Project>
             <S.Image src={imgSrc}/>
             <ItemTitle value={title}/>
             <ProjectDescription projectValue={description}/>
-            <Button outlined>
-                Look it Up
-            </Button>
+            <a href={href}>
+                <Button outlined>
+                    Look it Up
+                </Button>
+            </a>
         </S.Project>
     );
 };

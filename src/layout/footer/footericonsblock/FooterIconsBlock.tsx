@@ -13,7 +13,7 @@ export const FooterIconsBlock:React.FC = () => {
                 </S.Link>
             </S.Item>
             <S.Item>
-                <S.Link href="">
+                <S.Link href="https://www.linkedin.com/in/roman-kolosov-a83b29314/">
                     <Icon iconId={'footerLinkedIn'} width={'35'} height={'35'}
                           viewBox={'0 0 35 35'}/>
                 </S.Link>
