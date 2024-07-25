@@ -82,7 +82,8 @@ display: none;
   display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 20px;
+    flex-direction: row;
   `}
   ul {
     display: flex;
@@ -90,12 +91,12 @@ display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   }`
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
   position: fixed;
-  //top: 0;
-  //right: 0;
+    
   width: 100px;
   height: 100px;
   background-color: rgba(15, 22, 36, 0);
