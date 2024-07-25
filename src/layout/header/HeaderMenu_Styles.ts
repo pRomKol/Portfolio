@@ -91,12 +91,10 @@ display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
   }`
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
   position: fixed;
-    
   width: 100px;
   height: 100px;
   background-color: rgba(15, 22, 36, 0);

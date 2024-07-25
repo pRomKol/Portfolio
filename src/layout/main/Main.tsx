@@ -18,9 +18,11 @@ export const Main: React.FC = () => {
                     <S.Content id='aboutMe'>
                         <Title/>
                         <ShortBiography/>
-                        <Button primary>
-                            Let`s begin
-                        </Button>
+                        <a href="#projects">
+                            <Button primary>
+                                Let`s begin
+                            </Button>
+                        </a>
                     </S.Content>
                     <S.BackgroundImg src={mySvg} alt={'Avatar Background'}/>
                     <PhotoWrapper>
