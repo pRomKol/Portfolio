@@ -18,6 +18,7 @@ const ExperienceBlocks = styled(Wrapper)`
   flex-direction: row;
   position: relative;
   
+  
   @media ${theme.media.tablet} {
     display: flex;
     flex-direction: column;
@@ -34,23 +35,27 @@ const ExperienceBlocks = styled(Wrapper)`
     position: absolute;
     width: calc(100% - var(--offset) * 2);
     height: 10px;
-    --offset: min(calc((100% - (var(--items-count) - 1) * var(--gap)) / var(--items-count) / 2), var(--block-max-width) / 2);
+    --offset: min(calc((100% - (var(--items-count) - 1) * var(--gap)) / var(--items-count) / 2), var(--block-max-width) / 2) ;
     left: var(--offset);
     top: 40px;
 `
 
 //Experience block styles
 const ExperienceBlock = styled.div`
+  
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   height: 225px;
+  max-width: 265px;
 @media ${theme.media.tablet} {
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
+  max-width: 100%;
+   
 }
 `
 

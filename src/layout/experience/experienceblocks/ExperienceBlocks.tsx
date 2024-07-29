@@ -17,7 +17,7 @@ export const ExperienceBlocks = () => {
 
 const experienceArray = [
     {
-        description: 'I started learning front-end development, and also began studying at an IT incubator this year',
+        description: 'I started learning front-end development, and also began studying at udemy and IT incubator this year',
         year: '2021'
     },
     {
@@ -25,12 +25,12 @@ const experienceArray = [
         year: '2022'
     },
     {
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',
-        year: '2001'
+        description: 'I found my first job and started working on a project and completing my first tasks.',
+        year: '2023'
     },
     {
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.',
-        year: '2002'
+        description: 'I continue to improve my skills and learn something new',
+        year: '2024'
     },
 
 
